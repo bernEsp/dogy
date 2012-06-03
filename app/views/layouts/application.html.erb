@@ -7,7 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<% flash.each do |name, msg| %>
+  <%unless msg.nil? || msg.blank?%>     
+	  <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+	    <a class="close" data-dismiss="alert">×</a>
+	    <%= msg %>
+	  </div>  
+  <%end%>
+<% end %>  
 <%= yield %>
 
 </body>

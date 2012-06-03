@@ -1,0 +1,40 @@
+<div class="field">
+	<label for="pet[name]">Nombre de la mascota</label><br/>
+	<input name="pet[name]" type="text"></input>
+</div>
+<div class="field"> 
+	<label for="pet[caracteristicas]">Caracteristicas de la mascota</label><br/>
+	<textarea name="pet[caracteristicas]" type="text"></textarea>
+</div>
+<div class="field">
+	<label for="pet[trucos]">Monerias de las mascota</label><br/>
+	<textarea name="pet[trucos]" type="text"></textarea>
+</div>
+<div class="field">
+	<label for="pet[age]">Edad</label><br/>
+	<input name="pet[age]" type="text"></input>
+</div>
+<div class="field">
+	<label for="pet[sex]">Sexo</label><br/>
+	<input name="pet[sex]" type="text"></input>
+</div>
+<div class="field">
+	<label for="pet[born]">Nacimiento año/mes/dia</label><br/>
+	<input name="pet[born]" type="text"></input>
+</div>
+<div class="field">
+	<label for="color[name]">Color de pelo </label><br/>
+	<select name="color[name]">
+		<%= @colors.each do |color|%>
+		  <option value="<%=color.name%>"><%= color.name%></option>
+		<%end%>
+	</select>
+</div>
+<div class="field">
+	<label for="breed[name]">Raza</label><br/>
+	<select name="breed[name]">
+		<%= @breeds.each do |breed|%>
+		  <option value="<%=breed.name%>"><%= breed.name%></option>
+		<%end%>
+	</select>
+</div>
