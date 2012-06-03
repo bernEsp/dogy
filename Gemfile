@@ -14,4 +14,9 @@ gem 'pg'
 
 # user
 gem 'devise'
-gem 'devise-encryptable' 
+gem 'devise-encryptable'
+
+group :assets do
+  gem 'therubyracer'
+  gem 'uglifier'
+end 
