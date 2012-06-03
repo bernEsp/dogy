@@ -5,7 +5,7 @@ gem 'rack'
 gem 'yajl-ruby', require: 'yajl'
 
 gem 'jquery-rails'
-gem 'copycopter_client', '2.0.0'
+gem 'heroku'
 
 
 # The database
