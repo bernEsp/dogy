@@ -6,6 +6,7 @@ gem 'yajl-ruby', require: 'yajl'
 
 gem 'jquery-rails'
 gem 'heroku'
+gem 'taps'
 
 
 # The database
